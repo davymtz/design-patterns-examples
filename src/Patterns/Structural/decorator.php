@@ -1,36 +1,51 @@
 <?php
-interface IShape {
-	public function draw();
+interface IFastFood {
+	public function serve();
 }
 
-class Circle implements IShape{
-	public function draw(){
-		return 'draw circle';
+class Hamburger implements IFastFood{
+	public function serve(){
+		return 'Serve Hamburger';
 	}
 }
 
-class Triangle implements IShape{
-	public function draw(){
-		return 'draw triangle';
+class Hotdog implements IFastFood{
+	public function serve(){
+		return 'Serve Hotdog';
 	}
 }
 
-abstract class ShapeDecorator implements IShape {
-	protected $shape;
-	public function __construct(IShape $shape){
-		$this->shape = $shape;
+abstract class FastFoodDecorator implements IFastFood {
+	protected $fastFood;
+	public function __construct(IFastFood $fastFood){
+		$this->fastFood = $fastFood;
 	}
-	abstract function draw();
+	abstract function serve();
 }
 
-class BoderShape extends ShapeDecorator {
-	public function draw(){
-		$result = $this->shape->draw();
-		return "$result has border";
+class FrenchFries extends FastFoodDecorator {
+	public function serve(){
+		$result = $this->fastFood->serve();
+		return "$result with potatoes";
 	}
 }
-$item = new Triangle();
-$item = new BoderShape($item);
-echo $item->draw();
+
+class Soda extends FastFoodDecorator {
+    public function serve(){
+        $result = $this->fastFood->serve();
+        return "$result with soda";
+    }
+}
+
+class Dessert extends FastFoodDecorator {
+    public function serve(){
+        $result = $this->fastFood->serve();
+        return "$result with dessert";
+    }
+}
+
+$item = new Hotdog();
+$item = new FrenchFries(new Dessert(new Soda($item)));
+echo $item->serve()."\n";
 
 ?>
