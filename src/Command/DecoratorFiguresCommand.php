@@ -35,7 +35,7 @@ class DecoratorFiguresCommand extends Command
 
 
     $figure = new Triangle();
-        $figure = new BoderShape($figure);
+    $figure = new BoderShape($figure);
     $output->writeln([$figure->draw()]);
         // ...
     }

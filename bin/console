@@ -12,8 +12,10 @@ if (!$autoloader) {
 use Symfony\Component\Console\Application;
 use MonkeyCoders\Command\DecoratorFiguresCommand;
 use MonkeyCoders\Command\DecoratorFastFoodCommand;
+use MonkeyCoders\Command\AdapterPaymentGatewayCommand;
 $app = new Application();
 $app->add(new DecoratorFiguresCommand());
 $app->add(new DecoratorFastFoodCommand());
+$app->add(new AdapterPaymentGatewayCommand());
 $app->run();
 
