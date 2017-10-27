@@ -10,8 +10,8 @@ if (!$autoloader) {
 }
 
 use Symfony\Component\Console\Application;
-use MonkeyCoders\Command\DecoratorCommand;
+use MonkeyCoders\Command\DecoratorFiguresCommand;
 $app = new Application();
-$app->add(new DecoratorCommand());
+$app->add(new DecoratorFiguresCommand());
 $app->run();
 
