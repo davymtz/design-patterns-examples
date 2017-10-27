@@ -1,6 +1,6 @@
 # Design patterns examples
 
-The best way to learn something is practicing so it is how I will understand these patterns. 
+The best way to learn something is practicing so it is how we will understand these patterns. 
 
 ## Getting Started
 First to install the dependencies run
