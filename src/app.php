@@ -10,6 +10,8 @@ if (!$autoloader) {
 
 use Symfony\Component\Console\Application;
 use MonkeyCoders\Command\DecoratorFiguresCommand;
+use MonkeyCoders\Command\DecoratorFastFoodCommand;
 $app = new Application();
 $app->register(new DecoratorFiguresCommand());
+$app->register(new DecoratorFastFoodCommand());
 $app->run();

@@ -11,7 +11,9 @@ if (!$autoloader) {
 
 use Symfony\Component\Console\Application;
 use MonkeyCoders\Command\DecoratorFiguresCommand;
+use MonkeyCoders\Command\DecoratorFastFoodCommand;
 $app = new Application();
 $app->add(new DecoratorFiguresCommand());
+$app->add(new DecoratorFastFoodCommand());
 $app->run();
 

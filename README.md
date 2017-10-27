@@ -9,9 +9,15 @@ First to install the dependencies run
 composer install
 
 ```
-This will install the Symfony console then to
-show the result of the examples run
+This will install the Symfony console.
+ 
+## Running examples 
+#### Decorator fast food example
+```
+php bin/console MonkeyCoders:DecoratorFastFood
 
+```
+#### Decorator figures example
 ```
 php bin/console MonkeyCoders:DecoratorFigures
 
