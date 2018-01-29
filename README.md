@@ -19,4 +19,8 @@ php bin/console MonkeyCoders:DecoratorFigures
 ```
 php bin/console MonkeyCoders:AdapterPaymentGateway
 ```
+#### Template Method, hamburguer example
+```
+php bin/console MonkeyCoders:TemplateMethodHamburguer
+```
 
