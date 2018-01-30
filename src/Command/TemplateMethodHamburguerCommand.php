@@ -2,7 +2,7 @@
 namespace MonkeyCoders\Command;
 
 use MonkeyCoders\Patterns\Behavioral\TemplateMethod\Hamburguer\MeatHamburguer;
-use MonkeyCoders\Patterns\Behavioral\TemplateMethod\Hamburguer\VeggieHambuerguer;
+use MonkeyCoders\Patterns\Behavioral\TemplateMethod\Hamburguer\VeggieHamburguer;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -35,7 +35,7 @@ class TemplateMethodHamburguerCommand extends Command
 
 
         $meatHamburguer = new MeatHamburguer();
-        $veggieHamburguer = new VeggieHambuerguer();
+        $veggieHamburguer = new VeggieHamburguer();
         $output->writeln([$meatHamburguer->make()]);
         $output->writeln([$veggieHamburguer->make()]);
         // ...

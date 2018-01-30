@@ -9,7 +9,7 @@
 namespace MonkeyCoders\Patterns\Behavioral\TemplateMethod\Hamburguer;
 
 
-class VeggieHambuerguer extends HamburguerAbstract
+class VeggieHamburguer extends HamburguerAbstract
 {
 
     protected function mainTopic()
