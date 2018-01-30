@@ -23,4 +23,8 @@ php bin/console MonkeyCoders:AdapterPaymentGateway
 ```
 php bin/console MonkeyCoders:TemplateMethodHamburguer
 ```
+#### Chain of responsibility, hamburguer example
+```
+php bin/console MonkeyCoders:ChainOfResponsibilityHamburguer
+```
 

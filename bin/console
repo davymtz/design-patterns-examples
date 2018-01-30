@@ -14,10 +14,12 @@ use MonkeyCoders\Command\DecoratorFiguresCommand;
 use MonkeyCoders\Command\DecoratorFastFoodCommand;
 use MonkeyCoders\Command\AdapterPaymentGatewayCommand;
 use MonkeyCoders\Command\TemplateMethodHamburguerCommand;
+use MonkeyCoders\Command\ChainOfResponsibilityHamburguerCommand;
 $app = new Application();
 $app->add(new DecoratorFiguresCommand());
 $app->add(new DecoratorFastFoodCommand());
 $app->add(new AdapterPaymentGatewayCommand());
 $app->add(new TemplateMethodHamburguerCommand());
+$app->add(new ChainOfResponsibilityHamburguerCommand());
 $app->run();
 

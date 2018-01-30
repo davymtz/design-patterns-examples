@@ -16,7 +16,7 @@ class TemplateMethodHamburguerCommand extends Command
             ->setName('MonkeyCoders:TemplateMethodHamburguer')
 
             // the short description shown while running "php bin/console list"
-            ->setDescription('Example of Template Mathod Pattern')
+            ->setDescription('Example of Template Method Pattern')
 
             // the full command description shown when running the command with
             // the "--help" option
