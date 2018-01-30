@@ -27,4 +27,8 @@ php bin/console MonkeyCoders:TemplateMethodHamburguer
 ```
 php bin/console MonkeyCoders:ChainOfResponsibilityHamburguer
 ```
+#### Observer, sign up example
+```
+php bin/console MonkeyCoders:ObserverSignUp
+```
 
